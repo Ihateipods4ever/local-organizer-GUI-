@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Local File Organizer</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Local File Organizer</h1>
+            <p>Select a folder to clean, organize, and de-duplicate your files.</p>
+        </header>
+
+        <div class="controls">
+            <button id="select-folder-btn">1. Select Folder</button>
+            <div id="selected-folder" class="path-display">No folder selected</div>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox" id="delete-empty-checkbox"> Delete empty folders after organizing</label>
+        </div>
+
+        <div class="actions">
+            <button id="organize-btn" disabled>2. Organize Files</button>
+            <button id="undo-btn" disabled>Undo Last Organization</button>
+        </div>
+
+        <div class="actions">
+             <button id="find-duplicates-btn" disabled>3. Find Duplicates</button>
+        </div>
+
+        <div class="results-area">
+            <div class="log-container">
+                <h2>Activity Log</h2>
+                <pre id="log-output"></pre>
+            </div>
+            <div class="duplicates-container">
+                <h2>Duplicates Found</h2>
+                <div id="duplicates-output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./renderer.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+{
+  "name": "local-file-organizer",
+  "version": "1.0.0",
+  "description": "A desktop app to organize local files.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.2.1"
+  }
+}
+
